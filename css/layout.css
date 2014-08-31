@@ -227,7 +227,7 @@ section>h2{
 /* --------------------------------------------- */
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
 
 	body:before, body:after, .table{
 		display: none;
