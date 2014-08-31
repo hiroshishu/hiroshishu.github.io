@@ -246,11 +246,11 @@ section>h2{
 	}
 	
 	.live>h2{
-		height: 32px;
+		height: 64px;
 	}
 	
 	.live>div{
-		display: none;
+		font-size: 256px;
 	}
 
 	.web, .music, .work{
