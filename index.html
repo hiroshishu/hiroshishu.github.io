@@ -112,7 +112,12 @@
 	</section>
 	
     <script type="text/javascript">
-    	!(/Android|iPhone|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera) && skrollr.init({ forceHeight: false });
+    	!(/Android|iPhone|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera) && skrollr.init({ 
+    			forceHeight: false,
+    			mobileCheck: function(){
+    				return false;
+    			}
+    		});
     </script>
 </body>
 </html>
