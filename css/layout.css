@@ -52,8 +52,6 @@ br{
 
 a{
 	color: dimgray;
-	position: relative;
-	z-index: 20;
 }
 
 
@@ -79,6 +77,7 @@ body:before, body:after{
 	height: 100%;
 	border: 16px solid white;
 	z-index: 10;
+	pointer-events: none;
 }
 
 body:before{
@@ -112,7 +111,7 @@ section>h2{
 
 
 .live{
-	margin-top: 1000px;
+	margin-top: 72%;
 }
 
 .live>h2{
@@ -172,6 +171,10 @@ section>h2{
 	margin-left: 60%;
 }
 
+.web>div, .music>div{
+	display: none;
+}
+
 .work{
 	width: 720px;
 	margin: 400px auto 0;
@@ -227,7 +230,8 @@ section>h2{
 /* --------------------------------------------- */
 
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 800px) {
 
 	body:before, body:after, .table{
 		display: none;
@@ -242,7 +246,7 @@ section>h2{
 	}
 
 	.live{
-		margin-top: 540px;
+		margin-top: 600px;
 	}
 	
 	.live>h2{
@@ -250,7 +254,7 @@ section>h2{
 	}
 	
 	.live>div{
-		font-size: 256px;
+		font-size: 240px;
 	}
 
 	.web, .music, .work{
@@ -268,13 +272,26 @@ section>h2{
 	.web>p{
 		margin-left: 0;
 	}
+
+	.web>div, .music>div{
+		display: block;
+		position: relative;
+		width: 1em;
+		height: 1em;
+		font-size: 240px;
+		margin: 12px auto 0;
+	}
 	
 	.work>h2{
 		height: 32px;
 	}
 	
 	.work>div{
-		display: none;
+		width: 240px;
+		height: 150px;
+		border: 8px solid white;
+		border-radius: 12px;
+		margin: 24px auto;
 	}
 
 	.work>p{
@@ -304,3 +321,89 @@ section>h2{
 	}
 
 }
+
+@media screen and (min-width: 800px) and (max-width: 1024px)  {
+	.table>h2{
+		display: none;
+	}
+
+	.table>ul{
+		height: 0;
+	}
+
+	.desktop{
+		left:-96px;
+		top:400px;
+	}
+
+	.laptop{
+		left:160px;
+		top:528px;
+	}
+
+	.tablet{
+		left:-96px;
+		top:656px;
+	}
+
+	.mobile{
+		left:224px;
+		top:464px;
+	}
+
+	.mouse{
+		left:288px;
+		top:464px;
+	}
+
+	.keyboard{
+		left:32px;
+		top:656px;
+	}
+
+	.pencil{
+		left:160px;
+		top:464px;
+	}
+
+	.notepad{
+		left:352px;
+		top:464px;
+	}
+
+	.headphone{
+		left:544px;
+		top:1184px;
+	}
+
+	.microphone{
+		left:480px;
+		top:1248px;
+	}
+
+	.launchpad{
+		left:608px;
+		top:1440px;
+	}
+
+	.console{
+		left:352px;
+		top:1312px;
+	}
+
+	.piano{
+		left:736px;
+		top:1440px;
+	}
+
+	.record{
+		left:352px;
+		top:1184px;
+	}
+
+	.speaker{
+		left:608px;
+		top:1184px;
+	}
+
+｝
