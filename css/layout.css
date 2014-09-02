@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, div, p, 
 h1, h2, h3, h4, h5, h6, blockquote, 
 a, abbr, acronym, pre, code, cite, 
@@ -21,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	background-color: orange;
 	line-height: 1.41421356;
-	font-family: georgia, sans-serif;
+	font-family: 'proxima_nova', georgia, sans-serif;
 	font-size: 18px;
 	color: white;
 }
@@ -211,10 +222,10 @@ section>h2{
 	text-align: center;
 }
 .thanks>div{
-	margin: 64px;
+	margin: 40px 0;
 }
 .thanks>div>p{
-	margin: 24px 0;
+	margin-bottom: 24px;
 	font-size: 20px;
 }
 .thanks>div a{
