@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'Kuro';
+    src: url('../fonts/kuro-regular-webfont.eot');
+    src: url('../fonts/kuro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kuro-regular-webfont.woff') format('woff'),
+         url('../fonts/kuro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/kuro-regular-webfont.svg#Kuro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, p, 
+h1, h2, h3, h4, h5, h6, blockquote, 
+a, abbr, acronym, pre, code, cite, 
+b, u, i, s, span,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, menu, nav, section,
+figure, figcaption, footer, header{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	background-color: orange;
+	line-height: 1.41421356;
+	font-family: 'Kuro', Helvetica, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	color: white;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+h1{
+	font-size: 32px;
+}
+
+h2{
+	font-size: 28px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+h4{
+	font-size: 20px;
+}
+
+br{
+	clear: both;
+}
+
+a{
+	color: dimgray;
+}
+
+
+.center{
+	margin: auto;
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+}
+
+.gray{
+	color: dimgray;
+}
+
+
+
+/* frame */
+
+body:before, body:after{
+	content: '';
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	border: 16px solid white;
+	z-index: 10;
+	pointer-events: none;
+}
+
+body:before{
+	top: 0;
+	left: 0;
+}
+
+body:after{
+	right: 0;
+	bottom: 0;
+}
+
+section>h2{
+	text-align: center;
+	font-weight: 100;
+}
+
+.hi{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hi>h2{
+	height: 60px;
+	line-height: 60px;
+}
+
+
+
+.live{
+	margin-top: 72%;
+}
+
+.live>h2{
+	height: 100px;
+}
+
+.live>div{
+	width: 1em;
+	height: 1em;
+	font-size: 400px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.live>p{
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* --------------------------------------------- */
+
+.table{
+	margin-top: 400px;
+}
+
+.table>h2{
+	height: 88px;
+}
+
+.table>ul{
+	margin: 0 auto;
+	width: 768px;
+	height: 512px;
+	position: relative;
+}
+
+.table>ul>li{
+	position: absolute;
+}
+
+/* --------------------------------------------- */
+
+.web, .music{
+	width: 960px;
+	height: 384px;
+	margin: 400px auto 0;
+}
+
+.web>p, .music>p{
+	width: 40%;
+	padding-top: 24px;
+}
+
+.web>p{
+	margin-left: 60%;
+}
+
+.web>div, .music>div{
+	display: none;
+}
+
+.work{
+	width: 720px;
+	margin: 400px auto 0;
+}
+
+.work>h2{
+	height: 80px;
+}
+
+.work>div{
+	width: 480px;
+	position: relative;
+	border: 24px solid white;
+	border-bottom: 0;
+	border-radius: 24px 24px 0 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.work>p{
+	border-top: 18px solid white;
+	padding: 40px 24px;
+	text-align: center;
+}
+
+
+
+
+.thanks{
+	margin-top: 400px;
+	padding-bottom: 40px;
+}
+.thanks p{
+	text-align: center;
+}
+.thanks>div{
+	margin: 40px 0;
+}
+.thanks>div>p{
+	margin-bottom: 24px;
+	font-size: 20px;
+}
+.thanks>div a{
+	display: inline-block;
+	font-size: 64px;
+	margin: 0 12px;
+	position: relative;
+}
+
+
+/* --------------------------------------------- */
+
+
+
+@media screen and (max-width: 800px) {
+
+	body:before, body:after, .table{
+		display: none;
+	}
+	
+	body{
+		font-size: 14px;
+	}
+
+	section>h2{
+		font-size: 18px;
+	}
+
+	.live{
+		margin-top: 600px;
+	}
+	
+	.live>h2{
+		height: 64px;
+	}
+	
+	.live>div{
+		font-size: 240px;
+	}
+
+	.web, .music, .work{
+		width: 90%;
+		margin: 120px 5%;
+		height: auto;
+	}
+
+	.web>p, .music>p{
+		width: 100%;
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.web>p{
+		margin-left: 0;
+	}
+
+	.web>div, .music>div{
+		display: block;
+		position: relative;
+		width: 1em;
+		height: 1em;
+		font-size: 240px;
+		margin: 12px auto 0;
+	}
+	
+	.work>h2{
+		height: 32px;
+	}
+	
+	.work>div{
+		width: 244px;
+		height: 158px;
+		border: 8px solid white;
+		border-radius: 12px;
+		margin: 24px auto;
+	}
+
+	.work>p{
+		border-top: 0;
+		width: 100%;
+		padding: 12px 0;
+	}
+
+	.thanks{
+		width: 90%;
+		margin: 120px 5% 0;
+		padding-bottom: 12px;
+	}
+
+	.thanks>div{
+		margin: 24px 0;
+	}
+
+	.thanks>div>p{
+		margin: 12px 0;
+		font-size: 16px;
+	}
+
+	.thanks>div a{
+		margin: 0 4px;
+		font-size: 32px;
+	}
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)  {
+	
+	.table>h2{
+		display: none;
+	}
+
+	.table>ul{
+		height: 0;
+	}
+
+	.desktop{
+		left:-96px;
+		top:400px;
+	}
+
+	.laptop{
+		left:160px;
+		top:528px;
+	}
+
+	.tablet{
+		left:-96px;
+		top:656px;
+	}
+
+	.mobile{
+		left:224px;
+		top:464px;
+	}
+
+	.mouse{
+		left:288px;
+		top:464px;
+	}
+
+	.keyboard{
+		left:32px;
+		top:656px;
+	}
+
+	.pencil{
+		left:160px;
+		top:464px;
+	}
+
+	.notepad{
+		left:352px;
+		top:464px;
+	}
+
+	.headphone{
+		left:544px;
+		top:1184px;
+	}
+
+	.microphone{
+		left:480px;
+		top:1248px;
+	}
+
+	.launchpad{
+		left:608px;
+		top:1440px;
+	}
+
+	.console{
+		left:352px;
+		top:1312px;
+	}
+
+	.piano{
+		left:736px;
+		top:1440px;
+	}
+
+	.record{
+		left:352px;
+		top:1184px;
+	}
+
+	.speaker{
+		left:608px;
+		top:1184px;
+	}
+
+｝

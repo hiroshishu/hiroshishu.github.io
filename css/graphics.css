@@ -1,0 +1,393 @@
+.bis{
+	width: 1em;
+	height: 1em;
+	line-height: 100%;
+}
+
+.bis>b:before, .bis>b:after,
+.bis>i:before, .bis>i:after,
+.bis>s:before, .bis>s:after{
+	content: '';
+}
+
+.bis-s{
+	font-size: 64px;
+}
+.bis-m{
+	font-size: 128px;
+}
+.bis-l{
+	font-size: 256px;
+}
+
+
+
+@128{
+
+	.desktop>b{
+		-bis-shape: rect(0, 8, 112, 64);
+		border-width: 8px 8px 16px;
+		border-color: white;
+		border-style: solid;
+		border-radius: 8px;
+	}
+	.desktop>b:before{
+		-bis-shape: rect(40, 80, 32, 24, white);
+	}
+	.desktop>b:after{
+		-bis-shape: rect(16, 96, 80, 8, white);
+	}
+	
+	
+	
+	.laptop>b{
+		-bis-shape: rect(16, 20, 80, 56);
+		border: 8px solid white;
+		border-radius: 8px;
+	}
+	.laptop>b:before{
+		-bis-shape: triangle(down, -20, 68, 8, 12, white);
+		width: 112px;
+	}
+	.laptop>b:after{
+		-bis-shape: rect(28, 68, 24, 4, orange);
+		border-radius: 0 0 2px 2px;
+	}
+	
+	
+	
+	.tablet>b{
+		-bis-shape: rect(0, 16, 96, 80);
+		border-width: 8px 16px;
+		border-style: solid;
+		border-color: white;
+		border-radius: 8px;
+	}
+	.tablet>b:before{
+		-bis-shape: circle(-10, 40, 4, white);
+		border: 2px solid orange;
+	}
+	
+	
+	
+	.mobile>b{
+		-bis-shape: rect(28, 0, 56, 96);
+		border-width: 16px 8px;
+		border-style: solid;
+		border-color: white;
+		border-radius: 8px;
+	}
+	.mobile>b:before{
+		-bis-shape: circle(26, 102, 4, white);
+		border: 2px solid orange;
+	}
+	
+	
+	
+	.mouse>b{
+		-bis-shape: rect(32, 40, 68, 80, white);
+		border-radius: 0 0 32px 32px;
+	}
+	.mouse>b:before{
+		-bis-shape: rect(0, -36, 32, 32, white);
+		border-radius: 16px 0 0 0;
+	}
+	.mouse>b:after{
+		-bis-shape: rect(36, -36, 32, 32, white);
+		border-radius: 0 16px 0 0;
+	}
+	
+	
+	
+	.keyboard>b{
+		-bis-shape: rect(4, 28, 104, 56);
+		border: 8px solid white;
+		border-radius: 8px;
+	}
+	.keyboard>b:before{
+		-bis-shape: rect(8, 8, 8, 8, white);
+		box-shadow: 6 2 (16m)px (32n)px white, 5 (16n+8)px 16px white, 2 (80n)px 16px white,
+					80px 8px white, 2 (16n+8)px 16px white, 3 (16n+24)px 32px white;
+	}
+	
+	
+	
+	.pencil>b{
+		-bis-shape: rect(56, 20, 16, 88, white);
+	}
+	.pencil>b:before{
+		-bis-shape: rect(0, -16, 16, 12, white);
+		border-radius: 4px 4px 0 0;
+	}
+	.pencil>i{
+		-bis-shape: triangle(down, 56, 108, 16, 16, white);
+	}
+	.pencil>i:after{
+		-bis-shape: triangle(down, -4, -16, 8, 8, orange);
+	}
+	
+	
+	
+	.notepad>b{
+		-bis-shape: rect(18, 4, 92, 120, white);
+		border-radius: 8px;
+	}
+	.notepad>b:before{
+		-bis-shape: circle(16, 16, 6, orange);
+		box-shadow: 4 (20n)px 0 orange;
+	}
+	.notepad>b:after{
+		-bis-shape: rect(8, 32, 76, 8, orange);
+		border-radius: 4px;
+		box-shadow: 5 0 (16n)px orange;
+	}
+	
+	
+	
+	.headphone>b{
+		-bis-shape: rect(8, 8, 96, 88);
+		border: 8px solid white;
+		border-bottom: 0;
+		border-radius: 56px 56px 0 0;
+	}
+	.headphone>b:before{
+		-bis-shape: rect(6, 56, 24, 48, white);
+		border-radius: 12px;
+		box-shadow: 60px 0 white;
+	}
+	
+	
+	
+	.microphone>b{
+		-bis-shape: rect(44, 4, 40, 80, white);
+		border-radius: 16px;
+	}
+	.microphone>b:before{
+		-bis-shape: rect(8, 12, 8, 8, orange);
+		border-radius: 2px;
+		box-shadow: 2 4 (16m)px (16n)px orange; 
+	}
+	.microphone>i{
+		-bis-shape: rect(32, 44, 56, 48);
+		border: 4px solid white;
+		border-top: 0;
+		border-radius: 0 0 28px 28px;
+	}
+	.microphone>i:before{
+		-bis-shape: rect(26, 48, 4, 24, white);
+	}
+	.microphone>i:after{
+		-bis-shape: rect(4, 72, 48, 4, white);
+	}
+	
+	
+	
+	.piano>b{
+		-bis-shape: rect(10, 24, 12, 80, white);
+		box-shadow: 7 (16n)px 0 white;
+	}
+	.piano>b:before{
+		-bis-shape: rect(10, 0, 8, 48, orange);
+		box-shadow: 2 (16n)px 0 orange, 3 (16n+48)px 0 orange;
+	}
+	
+	
+	
+	.launchpad>b{
+		-bis-shape: rect(12, 12, 94, 94);
+		border: 6px solid white;
+		border-radius: 8px;
+	}
+	.launchpad>b:before{
+		-bis-shape: rect(6, 6, 16, 16, white);
+		box-shadow: 4 4 (22m)px (22n)px white;
+	}
+	
+	
+	
+	.console>b{
+		-bis-shape: rect(8, 20, 112, 88, white);
+		border-radius: 8px;
+	}
+	.console>b:before{
+		-bis-shape: rect(12, 8, 8, 72, orange);
+		border-radius: 8px;
+		box-shadow: 4 (20n)px 0 orange;
+	}
+	.console>b:after{
+		-bis-shape: rect(14, 16, 4, 8, white);
+		box-shadow: 4 (20n)px (16n)px white;
+	}
+	.console>i{
+		-bis-shape: circle(104, 36, 8, orange);
+	}
+	.console>s{
+		-bis-shape: circle(104, 60, 8, orange);
+		transform: rotate(75deg);
+	}
+	.console>i:before, .console>s:before{
+		-bis-shape: rect(7, 0, 2, 8, white);
+	}
+	
+	
+	
+	.record>b{
+		-bis-shape: circle(64, 64, 4, white);
+		box-shadow: 0 0 0 8px orange, 0 0 0 12px white, 0 0 0 16px orange, 0 0 0 48px white;
+	}
+	
+	
+	
+	.speaker>b{
+		-bis-shape: rect(20, 0, 88, 128, white);
+		border-radius: 12px;
+	}
+	.speaker>b:before{
+		-bis-shape: circle(44, 32, 4, white);
+		box-shadow: 0 0 0 2px orange, 0 0 0 4px white, 0 0 0 6px orange, 0 0 0 8px white, 0 0 0 10px orange, 
+					0 0 0 12px white, 0 0 0 16px orange;
+	}
+	.speaker>b:after{
+		-bis-shape: circle(44, 88, 6, white);
+		box-shadow: 0 0 0 2px orange, 0 0 0 4px white, 0 0 0 6px orange, 0 0 0 8px white, 0 0 0 10px orange, 
+					0 0 0 12px white, 0 0 0 14px orange, 0 0 0 18px white, 0 0 0 24px orange;
+	}
+
+
+	/* right part */
+	.cctv>b{
+		-bis-shape: rect(14, 0, 72, 96);
+		border-bottom: 24px solid white;
+		border-right: 24px solid white;
+		transform: skewX(8deg);
+	}
+	.cctv>b:before{
+		-bis-shape: line(70, 34, 98, 34, .5, orange);
+	}
+	.cctv>b:after{
+		-bis-shape: line(31, 96, 23, 120, .5, orange);
+	}
+	/* left part */
+	.cctv>i{
+		-bis-shape: rect(24, 0, 32, 96);
+		border-top: 32px solid white;
+		border-left: 32px solid white;
+		transform: skewX(-12deg);
+	}
+	.cctv>i:before{
+		-bis-shape: triangle(left, 48, -34, 96, 26, orange);
+		border-top: 0;
+	}
+	.cctv>i:after{
+		-bis-shape: line(0, -28, 0, 0, .5, orange);
+	}
+
+}
+
+
+
+.ocean>b{
+	-bis-shape: sector(120, 80, 400, 10);
+	-bis-shadow-copy: 18 0 0 white rotate((20n)deg);
+}
+
+.ocean>i{
+	-bis-shape: rect(-96, 200, 96, 80);
+	border-radius: 48px 48px 0 0;
+	box-shadow: 10 (80n+8)px 80px orange, 10 (80n-40)px 60px white, 10 (80n+8)px 40px orange, 
+				10 (80n-20)px 20px white, 10 (80n+8)px 2px orange, 10 (80n+8)px 0 white;
+}
+
+.ocean:after{
+	content: '';
+	-bis-shape: circle(112, 72, 40, white);
+	border: 8px solid orange;
+}
+
+
+@64{
+
+	.tumblr>b{
+		-bis-shape: rect(2, 2, 60, 60, white);
+		border-radius: 8px;
+	}
+	.tumblr>b:before{
+		content: 't';
+		-bis-shape: rect(0, -4, 100%, 100%);
+		font-family: 'Trebuchet MS', tahoma; 
+		font-weight: bolder;
+		font-size: 64px;
+		color: orange;
+	}
+	
+	
+	
+	.instagram>b{
+		-bis-shape: rect(2, 2, 48, 48);
+		border: 6px solid white;
+		border-radius: 8px;
+	}
+	.instagram>b:before{
+		-bis-shape: rect(0, 0, 13, 13);
+		border-bottom: 6px solid white;
+		border-left: 37px solid white;
+	}
+	.instagram>b:after{
+		-bis-shape: circle(18, 18, 14, orange);
+		border: 6px solid white;
+	}
+	
+	
+	
+	.codepen>b, .codepen>i{
+		-bis-shape: rect(30, 0, 0, 0);
+	}
+	.codepen>b:before{
+		-bis-shape: rect(-28, 0, 24, 16);
+	}
+	.codepen>i:before{
+		-bis-shape: rect(-28, 20, 24, 16);
+	}
+	.codepen>b:after{
+		-bis-shape: rect(0, 0, 24, 16);
+	}
+	.codepen>i:after{
+		-bis-shape: rect(0, 20, 24, 16);
+	}
+	.codepen>b:before, .codepen>b:after, 
+	.codepen>i:before, .codepen>i:after{
+		border: 4px solid white;
+	}
+	.codepen>b:before, .codepen>i:after{
+		transform: skewY(-30deg);
+		transform-origin: right center;
+	}
+	.codepen>b:after, .codepen>i:before{
+		transform: skewY(30deg);
+		transform-origin: left center;
+	}
+	
+	
+	
+	
+	.soundcloud>b{
+		-bis-shape: rect(2, 32, 60, 12, white);
+		border-radius: 12px;
+	}
+	.soundcloud>b:before{
+		-bis-shape: circle(20, 0, 10, white);
+	}
+	.soundcloud>b:after{
+		-bis-shape: circle(36, 0, 12, white);
+	}
+	.soundcloud>i{
+		-bis-shape: rect(4, 10, 2, 50, orange);
+		box-shadow: 10 (3n)px 0 orange;
+	}
+
+}
+
+
+
+
+
