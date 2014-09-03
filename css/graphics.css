@@ -1,3 +1,9 @@
+.bis{
+	width: 1em;
+	height: 1em;
+	line-height: 100%;
+}
+
 .bis>b:before, .bis>b:after,
 .bis>i:before, .bis>i:after,
 .bis>s:before, .bis>s:after{
@@ -307,9 +313,8 @@
 	}
 	.tumblr>b:before{
 		content: 't';
-		-bis-shape: rect(0, 0, 100%, 100%);
-		font-family: georgia;
-		line-height: 90%;
+		-bis-shape: rect(0, -4, 100%, 100%);
+		font-weight: bolder;
 		font-size: 64px;
 		color: orange;
 	}
