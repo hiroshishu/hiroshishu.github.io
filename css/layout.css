@@ -22,7 +22,6 @@ body {
 	background-color: orange;
 	line-height: 1.41421356;
 	font-family: 'Trebuchet MS', Tahoma, sans-serif;
-	font-weight: 100;
 	font-size: 18px;
 	color: white;
 }
@@ -93,6 +92,7 @@ body:after{
 
 section>h2{
 	text-align: center;
+	font-weight: lighter;
 }
 
 .hi{
