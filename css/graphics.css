@@ -314,6 +314,7 @@
 	.tumblr>b:before{
 		content: 't';
 		-bis-shape: rect(0, -4, 100%, 100%);
+		font-family: 'Trebuchet MS', tahoma; 
 		font-weight: bolder;
 		font-size: 64px;
 		color: orange;
