@@ -324,6 +324,7 @@ angular.module('seatPick', ['once'])
  
 .directive('ngIscroll', ['$timeout',  function($timeout){
     return function(scope, elem, attr){
+
 scope.pickSeat=function($event){
     var tar = $event.target,
     target = angular.element( tar );
@@ -345,6 +346,7 @@ scope.pickSeat=function($event){
                         scrollY: true,
                         freeScroll: true,
                         click: true,
+                        tap: true,
                         zoom: true,
                         zoomMin: .75,
                         zoomMax: 1.5,
