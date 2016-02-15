@@ -1,0 +1,25 @@
+body{
+  background-color: #F3F5F7;
+}
+.e_container{
+  padding-top: 127px;
+}
+.e_msg{
+  margin: 0 auto;
+  color: #000000;
+  width: 201px;
+  height: 76px;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-left: 18px;
+  line-height: 20px;
+  background: url(../images/error_msg.png) no-repeat center;
+  background-size: 201px 76px;
+}
+
+.e_cartoon{
+  margin-top: 42px;
+  height: 114px;
+  background: url(../images/error_cartoon.png) no-repeat bottom;
+  background-size: 112px 114px;
+}

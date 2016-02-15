@@ -1,0 +1,91 @@
+#activity-img {
+	height: 144px;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#cinema-list {
+	position: relative;
+	padding: 0 10px;
+}
+
+#cinema-list:before {
+	content: '';
+	position: absolute;
+	left: 16px;
+	top: -8px;
+	width: 0;
+	height: 0;
+	border-width: 0 8px 8px 8px;
+	border-color: #f3f5f7 transparent;
+	border-style: solid;
+}
+
+#cinema-list li {
+	padding: 15px 0;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.cinema-info .name {
+	color: #252525;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.cinema-info .addr {
+	color: #999;
+	line-height: 16px;
+}
+
+.movie-ticket {
+	margin-left: 32px;
+}
+
+.movie-ticket .price {
+	color: #f15353;
+	text-align: right;
+	line-height: 24px;
+}
+
+.movie-ticket .price span {
+	font-size: 19px;
+}
+
+.movie-ticket .buy-btn b, 
+.movie-ticket .buy-btn span {
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	width: 73px;
+	border-radius: 3px;
+	background-color: #ffa20f;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 2px solid #ff7b18;
+}
+
+.movie-ticket .buy-btn span {
+	background-color: #aaa;
+	border-bottom: 2px solid #666;
+}
+
+.no-cinema {
+	text-align: center;
+	line-height: 60px;
+	font-size: 14px;
+	display: none;
+}
+
+#error{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,0);z-index: 100;}
+#error p{position:fixed;top:50%;left:0;right:0;margin:auto;margin-top:-25px;width:72%;height:50px;line-height:50px;background-color:rgba(0,0,0,.6);color:#fff;text-align:center;font-size:15px;border-radius:3px;}
+.rows{-webkit-transition:all .8s linear ;-moz-transition:all .8s linear;-o-transition:all .8s linear;transition:all .8s linear;-webkit-animation: row 3s ease-in-out infinite;animation: row 3s ease-in-out infinite;}
+.fade{opacity:0;}
+@-moz-keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+@-webkit-keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+@keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}

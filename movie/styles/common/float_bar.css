@@ -1,0 +1,67 @@
+/*底部导航条*/
+.float-bar {
+  height: 45px;
+  z-index: 2;
+  line-height: 45px;
+  position: fixed;
+  bottom: 0;
+  /*max-width: 640px;*/
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  background: url(../../images/float-bar-bg.png);
+}
+.float-bar > a {
+  width: 25%;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+.float-bar > a.current {
+  background-color: rgba(255,255,255,0.2);
+}
+.float-bar .icon-dianying {
+  background: url(../../images/icon-dianying.png) no-repeat;
+  width: 23px;
+  height: 23px;
+  background-size: 23px 23px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  left: -6px;
+}
+.float-bar .icon-user-center {
+  background: url(../../images/icon-user-center.png) no-repeat;
+  width: 20px;
+  height: 23px;
+  background-size: 20px 23px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  left: -6px;
+}
+.float-bar .icon-yingyuan {
+  background: url(../../images/icon-yingyuan.png) no-repeat;
+  width: 26px;
+  height: 23px;
+  background-size: 26px 23px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  left: -6px;
+}
+.float-bar .icon-activities {
+  background: url(../../images/icon-activities.png) no-repeat;
+  width: 18px;
+  height: 21px;
+  background-size: 18px 21px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  left: -6px;
+}

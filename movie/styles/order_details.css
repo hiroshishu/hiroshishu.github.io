@@ -1,0 +1,98 @@
+/*layoyt*/
+.order-details {
+  color: #333;
+  margin: 0 auto;
+  background-color: #f3f5f7;
+}
+.order-details > section {
+  position: relative;
+  margin: 10px 10px 0;
+  background-color: #fff;
+}
+.order-details > section > h2 {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  background-color: #cedfef;
+}
+.d-panel {
+  padding: 15px;
+}
+.d-panel p {
+  line-height: 1.5;
+}
+.d-panel .m-name {
+  font-size: 15px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.d-panel .name-line {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+.d-panel .address-line{
+  margin-left: 36px;
+}
+.icon-location {
+  width: 11px;
+  height: 13px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../images/order-icon-location.png) no-repeat 0 0;
+}
+
+/*pay bar style*/
+.pay-bar {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  overflow: hidden;
+  background-color: #4a4a4a;
+}
+.pay-bar .pay-amount {
+  display: block;
+  font-size: 14px;
+  margin: 8px 0 0 10px;
+}
+.pay-bar .time-out {
+  display: block;
+  margin: 3px 0 0 10px;
+}
+.pay-bar a {
+  border-radius: 3px;
+  background-color: #ff6666;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0 12px;
+}
+
+/*helper*/
+label .ls1 {
+  width: 1em;
+  display: inline-block;
+}
+.middle {
+  vertical-align: middle;
+}
+.cRed {
+  color: #ff6666;
+}
+.border-bot {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.f15 {
+  font-size: 15px;
+  font-weight: bold;
+}

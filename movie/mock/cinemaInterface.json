@@ -1,0 +1,342 @@
+
+
+{
+    "code": "200",
+    "data": [
+        {
+            "moviePlanList": [
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "11:25",
+                    "pid": "26685894",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "09:45",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "13:35",
+                    "pid": "26685895",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "11:55",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "14:25",
+                    "pid": "26685890",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "12:45",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "15:45",
+                    "pid": "26685896",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "14:05",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "16:35",
+                    "pid": "26685891",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "14:55",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "17:55",
+                    "pid": "26685897",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "16:15",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "20:05",
+                    "pid": "26685898",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "18:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "20:55",
+                    "pid": "26685892",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "19:15",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "22:15",
+                    "pid": "26685899",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "20:35",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "23:05",
+                    "pid": "26685893",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "21:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-19",
+                    "pendtime": "00:25",
+                    "pid": "26685900",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "22:45",
+                    "ptype": "2D/国语"
+                }
+            ],
+            "planDate": "2012-04-17",
+            "label":"今天"
+        },
+        {
+            "moviePlanList": [
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "20:05",
+                    "pid": "26663700",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "18:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "20:55",
+                    "pid": "26663694",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "19:15",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "22:15",
+                    "pid": "26663701",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "20:35",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "23:05",
+                    "pid": "26663695",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "21:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "00:25",
+                    "pid": "26663702",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "22:45",
+                    "ptype": "2D/国语"
+                }
+            ],
+            "planDate": "2012-04-18",
+            "label":"明天"
+        },{
+            "moviePlanList": [
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "20:05",
+                    "pid": "26663700",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "18:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "20:55",
+                    "pid": "26663694",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "19:15",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "22:15",
+                    "pid": "26663701",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "20:35",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "23:05",
+                    "pid": "26663695",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "21:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "00:25",
+                    "pid": "26663702",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "22:45",
+                    "ptype": "2D/国语"
+                }
+            ],
+            "planDate": "2012-04-19",
+            "label":"周一"
+        },
+        {
+            "moviePlanList": [
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "20:05",
+                    "pid": "26663700",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "18:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "20:55",
+                    "pid": "26663694",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "19:15",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "22:15",
+                    "pid": "26663701",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "20:35",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "三厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "23:05",
+                    "pid": "26663695",
+                    "pmarket": "112.00",
+                    "pnum": "89",
+                    "pprice": "56.00",
+                    "ptime": "21:25",
+                    "ptype": "2D/国语"
+                },
+                {
+                    "hallName": "二厅",
+                    "pagent": "微信电影票",
+                    "pdate": "2015-04-18",
+                    "pendtime": "00:25",
+                    "pid": "26663702",
+                    "pmarket": "112.00",
+                    "pnum": "80",
+                    "pprice": "56.00",
+                    "ptime": "22:45",
+                    "ptype": "2D/国语"
+                }
+            ],
+            "planDate": "2012-04-20",
+            "label":"周二"
+        }
+    ]
+}

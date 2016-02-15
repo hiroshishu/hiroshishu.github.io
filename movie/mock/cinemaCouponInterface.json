@@ -1,0 +1,48 @@
+{
+    "code": "200",
+    "data": [
+        
+            {
+                "agentId": "66796",
+                "agentName": "影客通票",
+                "cinemaId": "6587",
+                "enableDay": "90",
+                "invalidateDate": "2015-07-16 00:00:00",
+                "jdPrice": "33",
+                "marketPrice": "80",
+                "minPrice": "33",
+                "tempId": "5250",
+                "tempName": "2D",
+                "tmpType": "2D",
+                "yn": "1"
+            },
+            {
+                "agentId": "63486",
+                "agentName": "兜有中影票务通",
+                "cinemaId": "5757",
+                "enableDay": "90",
+                "invalidateDate": "2015-07-16 00:00:00",
+                "jdPrice": "43",
+                "marketPrice": "120",
+                "minPrice": "42",
+                "tempId": "5564",
+                "tempName": "3D",
+                "tmpType": "3D",
+                "yn": "1"
+            },
+            {
+                "agentId": "63486",
+                "agentName": "兜有中影票务通",
+                "cinemaId": "5757",
+                "enableDay": "90",
+                "invalidateDate": "2015-07-16 00:00:00",
+                "jdPrice": "43",
+                "marketPrice": "120",
+                "minPrice": "42",
+                "tempId": "5564",
+                "tempName": "3D",
+                "tmpType": "3D",
+                "yn": "1"
+            }
+    ]
+}

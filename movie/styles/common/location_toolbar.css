@@ -1,0 +1,52 @@
+/*location toolbar*/
+.location-toolbar {
+	height: 30px;
+	line-height: 30px;
+	position: fixed;
+	bottom: 0;
+	border-radius: 3px;
+	border: 1px solid #c6c6c6;
+	background: rgba(255, 255, 255, 0.96);
+	width: 96%;
+	z-index: 9;
+	color: #666;
+	margin: 0 2% 2%;
+	transition: 100ms ease-in-out;
+	-webkit-transition: 100ms ease-in-out;
+	-moz-transition: 100ms ease-in-out;
+	-ms-transition: 100ms ease-in-out;
+	-o-transition: 100ms ease-in-out;
+}
+.location-toolbar .loc-icon {
+	width: 12px;
+	height: 15px;
+	display: inline-block;
+	float: left;
+	margin: 7px 7px 0 10px;
+	background: url(../images/location-toolbar-i.png) no-repeat;
+	background-size: 12px 15px;
+}
+.location-toolbar .refresh-btn {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: right;
+	margin: 6px 10px 0 7px;
+	background: url(../images/location-toolbar-r.png) no-repeat;
+	background-size: 16px 16px;
+}
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+	}
+}
+.location-toolbar .rotating {
+	animation: rotating 1s linear infinite;
+	-webkit-animation: rotating 1s linear infinite;
+	-moz-animation: rotating 1s linear infinite;
+	-ms-animation: rotating 1s linear infinite;
+	-o-animation: rotating 1s linear infinite;
+}

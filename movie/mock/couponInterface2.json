@@ -1,0 +1,49 @@
+{
+  "code": "200",
+  "data": {
+    "availableDCoupon": [{
+      "beginTime": "2015-05-07",
+      "couponId": "1195158144",
+      "couponLimitInfo": "仅可购买电影票商品",
+      "couponLimitType": "1",
+      "couponType": "1",
+      "discount": "15.0000",
+      "endTime": "2015-06-06",
+      "quota": "30.0000",
+      "status": "1"
+    }],
+    "availableJCoupon": [],
+    "unavailableDCoupon": [{
+      "beginTime": "2015-05-05",
+      "couponId": "1179883686",
+      "couponLimitInfo": "恬宁尔旗舰店",
+      "couponLimitType": "2",
+      "couponType": "1",
+      "discount": "100.0000",
+      "endTime": "2015-05-10",
+      "quota": "1000.0000",
+      "status": "0"
+    }, {
+      "beginTime": "2015-04-30",
+      "couponId": "1160520604",
+      "couponLimitInfo": "仅可购买箱包品类京东自营商品",
+      "couponLimitType": "1",
+      "couponType": "1",
+      "discount": "100.0000",
+      "endTime": "2015-05-11",
+      "quota": "299.0000",
+      "status": "0"
+    }, {
+      "beginTime": "2015-04-30",
+      "couponId": "1160641326",
+      "couponLimitInfo": "仅可购买箱包品类京东自营商品",
+      "couponLimitType": "1",
+      "couponType": "1",
+      "discount": "100.0000",
+      "endTime": "2015-05-11",
+      "quota": "299.0000",
+      "status": "0"
+    }],
+    "unavailableJCoupon": []
+  }
+}

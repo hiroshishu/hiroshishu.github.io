@@ -1,0 +1,386 @@
+/*layoyt*/
+.order {
+  color: #333;
+  background-color: #f3f5f7;
+}
+.ticket-info {
+  margin: 10px;
+  padding: 15px 15px 10px;
+  background-color: #fff;
+}
+.ticket-info label {
+  display: inline-block;
+}
+.ticket-info h2 {
+  color: #666;
+  font-size: 14px;
+}
+.ticket-info p {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+.ticket-info p span {
+  vertical-align: middle;
+}
+/*.ticket-info p .icon-location {
+  width: 11px;
+  height: 13px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url(../images/order-icon-location.png) no-repeat 0 0;
+}*/
+
+.ticket-info p .icon-10{
+  font-size: 14px;
+  color: #f66;
+}
+
+.ticket-info ul {
+  border-bottom: 1px dotted #ccc;
+}
+.ticket-info ul li {
+  margin: 10px 0;
+}
+.ticket-info .count {
+  margin-top: 10px;
+}
+.ticket-info .input-wrap {
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 118px;
+  height: 35px;
+  position: relative; 
+}
+.ticket-info .input-wrap .decrement:before {
+  content: '';
+  width: 16px;
+  height: 4px;
+  top: 15px;
+  left: 8px;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #666;
+}
+.ticket-info .input-wrap .decrement {
+  top: 0;
+  left: 0;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+}
+.ticket-info .input-wrap .disabled.decrement:before {
+  background-color: #ccc;
+}
+.ticket-info .input-wrap .disabled.decrement {
+  background-color: #f3f5f7;
+}
+.ticket-info .input-wrap input {
+  width: 50px;
+  height: 33px;
+  margin-left: 33px;
+  text-align: center;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.ticket-info .input-wrap .add {
+  top: 0;
+  left: 83px;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+}
+.ticket-info .input-wrap .add:before {
+  content: '';
+  width: 16px;
+  height: 4px;
+  top: 15px;
+  left: 8px;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #666;
+}
+.ticket-info .input-wrap .add:after {
+  content: '';
+  width: 16px;
+  height: 4px;
+  top: 15px;
+  left: 8px;
+  position: absolute;
+  border-radius: 3px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #666;
+}
+.phone-panel, .coupon-panel, .amount-panel, .pwd-panel {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+.phone-panel label, .pwd-panel label{
+  line-height: 35px;
+}
+
+.phone-panel .input-wrap, .pwd-panel .input-wrap {
+  border: 1px solid #ccc;
+  height: 35px;
+  position: relative;
+}
+
+.phone-panel .input-wrap {
+  margin-left: 50px;
+}
+
+.pwd-panel .input-wrap {
+    margin-left: 64px;
+    margin-right: 20px;
+}
+.phone-panel .input-wrap input, .pwd-panel .input-wrap input {
+  width: 100%;
+  height: 33px;
+  border: none;
+  -webkit-appearance: none;
+  text-indent: 1em;
+}
+.phone-panel .input-wrap .del, .pwd-panel .input-wrap .del {
+  top: 0;
+  right: 5px;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+}
+.phone-panel .input-wrap .del:before, .pwd-panel .input-wrap .del:before {
+  content: '';
+  width: 16px;
+  height: 3px;
+  top: 15px;
+  left: 8px;
+  position: absolute;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  background-color: #ccc;
+}
+.phone-panel .input-wrap .del:after, .pwd-panel .input-wrap .del:after {
+  content: '';
+  width: 16px;
+  height: 3px;
+  top: 15px;
+  left: 8px;
+  position: absolute;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+  background-color: #ccc;
+}
+.coupon-panel .coupon-line {
+
+  /*margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;*/
+}
+.coupon-panel .coupon-recomm {
+  padding: 4px 1px;
+  background: #cddded;
+  margin-left: 30px;
+  position: relative;
+  color: #666;
+  display: inline-block;
+}
+.coupon-panel .coupon-recomm:before, .coupon-panel .coupon-recomm:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: url('../images/order-border.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.coupon-panel .coupon-recomm:before {
+  left: -4px;
+}
+.coupon-panel .coupon-recomm:after {
+  left: 100%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.coupon-panel .coupon-recomm > span {
+  color: #ff6666;
+  padding: 2px 5px;
+  border-radius: 2px;
+  background-color: #e6eef6;
+}
+.coupon-panel .coupon-link {
+  margin-top: 5px;
+}
+.coupon-panel .coupon-link .arrow-r {
+  color: #ccc;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  position: relative;
+  top: 1px;
+  margin-left: 10px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.amount-panel .coupon-amount {
+  margin-top: 10px;
+}
+.cm-line {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #ccc;
+}
+.cm-line .jdbox {
+  display: block;
+  width: 18px;
+  height: 17px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.cm-line .jdbox:before {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 12px;
+  height: 7px;
+  border-left: 3px solid #67b423;
+  border-bottom: 3px solid #67b423;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.cm-line .jdbox.jdouUsed:before {
+  content: '';
+}
+
+.desc {
+  margin: 10px 10px 50px;
+  line-height: 1.5;
+}
+.desc dt {
+  font-size: 13px;
+}
+.desc dd {
+  font-size: 11px;
+}
+
+/*pay bar style*/
+.pay-bar {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  background-color: #4a4a4a;
+}
+.pay-bar label {
+  font-size: 15px;
+  padding-left: 10px;
+}
+.pay-bar a {
+  border-radius: 3px;
+  background-color: #ff6666;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0 12px;
+}
+
+.icon-help {
+  color: #ccc;
+  margin-left: 5px;
+  line-height: 35px;
+}
+
+/*helper*/
+label .ls1 {
+  width: 1em;
+  display: inline-block;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.none, .popup-wrap.none {
+  display: none;
+}
+.popup-overlay.block, .popup-wrap.block {
+  display: block;
+}
+.pay-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+}
+/*popup*/
+.popup-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: none;
+}
+.popup-wrap {
+  position: fixed;
+  width: 100%;
+  display: none;
+  z-index: 3;
+  left: 0px;
+  top: 150px;
+}
+.popup-content {
+  width: 85%;
+  color: #000;
+  background: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+  border-radius: 6px;
+  max-width: 640px;
+  padding: 20px 10px;
+}
+.popup-content h2 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.popup-content p {
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.popup-content .btn{
+  border-radius: 3px;
+  background-color: #f3f5f7;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  width: 130px;
+  margin: 0 auto;
+  font-size: 14px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="seatPick">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<meta http-equiv="Expires" CONTENT="0">  
+	<meta http-equiv="Cache-Control" CONTENT="no-cache">  
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+	<link rel="apple-touch-icon-precomposed" href="http://st.360buyimg.com/m/images/apple-touch-icon.png?v=jd2015030522"/>
+
+	<title>京东电影</title>
+	<link href="styles/common/base.css" rel="stylesheet" type="text/css">
+	<link href="styles/seat_pick.css" rel="stylesheet" type="text/css">
+	<!-- 京东M端通用头 css 与 js-->
+    <link href="http://st.360buyimg.com/common/commonH_B/css/header.css?v=20150618" charset="utf-8" rel="stylesheet" type="text/css"/>
+	<script src="http://st.360buyimg.com/common/commonH_B/js/m_common_header_bottom.js?v=20150618" type="text/javascript"></script>
+</head>
+
+<body ng-controller="SeatPickCtrl">
+	<!-- 通用头 div -->
+    <div ng-show="isWeixin == 0" id="m_common_header" style="min-height:45px;"></div>
+
+	<section class="movie-panel clearfix">
+		<div class="picked-btn fright">
+			<b ng-show="pickedSeats.length" ng-click="seatConfirm($event)" ng-cloak>已选好</b>
+			<i clstag="pageclick|keycount|201507158|1"></i>
+			<span ng-hide="pickedSeats.length">已选好</span>
+		</div>
+
+		<div class="movie-info">
+			<p ng-bind="data.movieName"></p>
+			<p ng-bind="data.showTime"></p>
+			<p ng-show="data.limitInfo" ng-bind="'特价票' + data.limitInfo"></p>
+		</div>
+	</section>
+
+	<section class="seat-pick">
+		<div class="selected-seat">
+			<p class="init" ng-hide="pickedSeats.length">请选择座位<span>(一次最多选择4个)</span></p>
+			<i ng-repeat="st in pickedSeats" once-text="st|seatFormat"></i>
+		</div>
+
+		<div class="seat-wrapper">
+			<p class="seat-types clearfix">
+				<span><i class="bbox seat-type available" ng-click="pickSeat($event)"></i>可选</span>
+				<span><i class="bbox seat-type occupied"></i>已选</span>
+				<span><i class="bbox seat-type sold"></i>已售</span>
+				<span><i class="bbox seat-type couple"></i>情侣座</span>
+			</p>
+
+			<div id="seat-map-wrapper" ng-iscroll>
+				<<div class="seat-map">
+					<p class='screen'><span ng-bind="data.hallName + '银幕'"></span></p>
+					<p class='seats clearfix' ng-repeat='seat in seats'>
+						<i class="bbox seat-type" ng-repeat-start="st in seat track by $index" once-class="st.cl" ng-click="pickSeat($event)" once-if="st.label" once-title="st.row+':'+st.no"></i>
+						<b class="empty-seat" once-if="!st.label" ng-repeat-end></b>
+					</p>
+				</div>
+
+				<p class="seat-rowno">
+					<span ng-repeat="row in rows track by $index" once-text="row"></span>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="tip-msg" ng-class="fade"><span ng-bind="msg"></span></div>
+	<!-- loading -->
+	<link rel="import" href="template/loading.html?__inline">
+
+	<script src="scripts/lib/angular.js"></script>
+	<!-- <script src="scripts/lib/angular-touch.js"></script> -->
+	<script src="scripts/lib/fastclick.js"></script>
+	<script src="scripts/lib/angular-once.js"></script>
+
+	<script src="scripts/lib/zepto.js"></script>
+
+	<script src="scripts/lib/iscroll-zoom.js"></script>
+	<script src="scripts/seat_pick.js"></script>
+	
+	<script type="text/javascript">
+	    window.jQuery = window.zepto;
+	    var jaq = jaq || [];
+	    jaq.push(['account', '']);
+	    jaq.push(['domain', 'm.movie.jd.com']);
+	    jaq.push(['erp_account', '']);
+	    (function () {
+	        var ja = document.createElement('script');
+	        ja.type = 'text/javascript';
+	        ja.async = true;
+	        ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : 'http://csc') + '.jd.com/joya.js';
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(ja, s);
+	    })();
+	</script>
+
+	<!--  通用头 显示 -->
+	
+    <script>
+        function loadHB(){
+            var sid = '';
+            var mchb = new MCommonHeaderBottom();
+            var title = sessionStorage.cinemaName.substring(0,10);
+            var headerArg = {hrederId : 'm_common_header', title:title, sid : sid, isShowShortCut : false, selectedShortCut : '4'};
+            mchb.header(headerArg);
+        }
+        loadHB();
+    </script>
+	
+</body>
+</html>

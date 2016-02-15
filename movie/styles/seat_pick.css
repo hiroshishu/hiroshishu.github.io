@@ -1,0 +1,231 @@
+body {
+  color: #666;
+}
+
+.movie-panel {
+  background-color: #fff;
+  padding: 10px 15px 10px 20px;
+  position: relative;
+}
+
+.movie-info {
+  font-size: 14px;
+}
+
+.movie-info p:first-child {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.movie-info p:last-child {
+  margin-top: 6px;
+}
+
+.picked-btn {
+  position: absolute;
+  margin: auto;
+  top:0; bottom: 0;
+  right: 15px;
+  width: 82px;
+  height: 32px;
+}
+
+.picked-btn b, .picked-btn span {
+  display: block;
+  font-size: 14px;
+  padding: 8px 20px;
+  background-color: #ff6066;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.picked-btn span {
+  background-color: #ccc;
+}
+
+.selected-seat {
+  height: 40px;
+  line-height: 40px;
+  background: #cedfef;
+  padding: 0 15px 0 20px;
+  color: #666;
+}
+.selected-seat span {
+  color: #999;
+}
+.selected-seat i {
+  display: inline-block;
+  background: #fff;
+  height: 20px;
+  line-height: 20px;
+  max-width: 70px;
+  font-style: normal;
+  margin-right: 15px;
+  position: relative;
+  padding: 0 6px;
+}
+.selected-seat i:last-child {
+  margin-right: 0;
+}
+.selected-seat i:before, .selected-seat i:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: url(../images/seat-border.png) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.selected-seat i:before {
+  left: -5px;
+}
+.selected-seat i:after {
+  left: 100%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.seat-wrapper {
+  position: relative;
+  background: #fff;
+}
+.seat-types {
+  padding: 12px 0 0 24px;
+}
+.seat-types span {
+  display: inline-block;
+  line-height: 16px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+.seat-types span>i {
+  float: left;
+}
+.seat-rowno {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  background: #aeafb0;
+  padding-top: 48px;
+  font-size: 12px;
+}
+.seat-rowno span {
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  height: 36px;
+  line-height: 28px;
+}
+#seat-map-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+  margin-top: 10px;
+}
+.seat-map {
+  position: absolute;
+  padding: 0 8px 10px 32px;
+  font-size: 0; /*清除inline-block空格*/
+}
+.seat-map .seats {
+  height: 36px;
+  white-space: nowrap;
+}
+.seat-map .screen {
+  width: 150px;
+  line-height: 22px;
+  color: #333;
+  text-align: center;
+  margin: 10px auto 16px;
+  border-top: 1px solid #aeafb0;
+  position: relative;
+  font-size: 12px;
+}
+.seat-map .screen:before, .seat-map .screen:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  border-left: 1px solid #aeafb0;
+  height: 12px;
+}
+.seat-map .screen:before {
+  left: -4px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.seat-map .screen:after {
+  right: -4px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.seat-types i.seat-type, .seat-types b.empty-seat {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.seat-map i.seat-type, .seat-map b.empty-seat {
+  margin-right: 8px;
+}
+i.seat-type, b.empty-seat {
+  display: inline-block;
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  border-radius: 2px;
+  position: relative;
+}
+i.seat-type:before {
+  content: '';
+  position: absolute;
+  top: -.0833333em;
+  left: 50%;
+  margin-left: -.291666666em;
+  width: .583333333em;
+  height: .166666667em;
+  border-radius: 2px;
+  background-color: #fff;
+}
+i.seat-type.available {
+  border: 1px solid #ccc;
+}
+i.seat-type.available:before {
+  border: 1px solid #ccc;
+  border-top: 0;
+  top: -1px;
+}
+i.seat-type.occupied {
+  background-color: #6dbe25;
+  position: relative;
+  border: 0;
+}
+i.seat-type.occupied:before {
+  border: 0;
+}
+i.seat-type.occupied:after {
+  content: '';
+  position: absolute;
+  top: .29166666em;
+  left: .2083333em;
+  width: .5833333em;
+  height: .3333333em;
+  border-left: .125em solid #fff;
+  border-bottom: .125em solid #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+i.seat-type.sold {
+  background-color: #ccc;
+}
+i.seat-type.couple {
+  background-color: #f6c1dc;
+  border: 0;
+}

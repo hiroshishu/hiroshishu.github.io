@@ -1,0 +1,40 @@
+{
+	"code": 200,
+	"data": [{
+		"movieId": 5,
+		"movieName": "璀璨的婚礼",
+		"tmplateType": "1",
+		"jdPicAddr": "images/test/m5.jpg",
+		"releaseDate": "10月14日"
+	}, {
+		"movieId": 2,
+		"movieName": "狼图腾",
+		"tmplateType": "1",
+		"jdPicAddr": "images/test/m2.jpg",
+		"releaseDate": "10月11日"
+	}, {
+		"movieId": 3,
+		"movieName": "王牌特工",
+		"tmplateType": "2",
+		"jdPicAddr": "images/test/m3.jpg",
+		"releaseDate": "10月12日"
+	}, {
+		"movieId": 6,
+		"movieName": "北京爱情故事",
+		"tmplateType": "2",
+		"jdPicAddr": "images/test/m6.jpg",
+		"releaseDate": "10月15日"
+	}, {
+		"movieId": 1,
+		"movieName": "超能陆战队",
+		"tmplateType": "1",
+		"jdPicAddr": "images/test/m1.jpg",
+		"releaseDate": "10月10日"
+	}, {
+		"movieId": 4,
+		"movieName": "绿巨人",
+		"tmplateType": "1",
+		"jdPicAddr": "images/test/m4.jpg",
+		"releaseDate": "10月13日"
+	}]
+}

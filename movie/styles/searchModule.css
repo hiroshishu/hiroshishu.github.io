@@ -1,0 +1,310 @@
+
+.commonTab {
+  position: relative;
+}
+.commonTab .tabUl {
+  overflow: auto;
+}
+.commonTab .tabUl .tabLi {
+  background-color: #858eb0;
+  color: #ffffff;
+  font-weight: bold;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.commonTab .tabUl .tabLi.cur {
+  background-color: #58638b;
+}
+.commonTab .tabUl .tabLi.cur i {
+  display: block;
+}
+.commonTab .tabUl .tabLi i {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  margin-left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid #ffffff;
+}
+.search_mask {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.searchModule_wrap {
+  z-index: 101;
+  position: fixed;
+  left: 0;
+  bottom: -58%;
+  width: 100%;
+  height: 58%;
+  background-color: #fff;
+  color: #666666;
+  overflow: hidden;
+  font-size: 12px;
+  box-shadow: 0px -1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-transition: bottom 0.2s linear;
+  -moz-transition: bottom 0.2s linear;
+  -o-transition: bottom 0.2s linear;
+  -ms-transition: bottom 0.2s linear;
+  transition: bottom 0.2s linear;
+}
+.searchModule_wrap .hide {
+  display: none;
+}
+.searchModule_wrap .resultContainer {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+.searchModule_wrap .resultContainer .ulWrap {
+  position: relative;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content {
+  padding: 9px 14px 0 14px;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-name {
+  height: 16px;
+  /*margin: 9px 0 5px 0;*/
+  margin-bottom: 5px;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-name .name {
+  width: 68.5%;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-name .icon {
+  margin-left: 6px;
+  float: right;
+  padding: 0 3px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 3px;
+  color: #fff;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-name .icon-seat {
+  background: #f29f00;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-name .icon-coupon {
+  background: #6dbe25;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-addr {
+  height: 28px;
+  line-height: 28px;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-addr .addr {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-addr .dis {
+  margin-left: 20px;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-addr .price {
+  float: right;
+  color: #f96666;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-addr .price.sale {
+  border: 1px solid #f96666;
+  background-color: #fff;
+  padding: 0 4px;
+  border-radius: 2px;
+  line-height: 18px;
+  font-weight: lighter;
+}
+.searchModule_wrap .resultContainer .ulWrap .rs-content .rs-addr .price i {
+  margin: 0 1px;
+  font-size: 18px;
+  font-style: normal;
+}
+.searchModule_wrap .top {
+  width: 100%;
+  height: 40px;
+  padding: 0 14px;
+  position: relative;
+  background-color: #f0eff5;
+}
+.searchModule_wrap .top .icon-sousuo {
+  position: absolute;
+  left: 10px;
+  top: 3px;
+  display: inline-block;
+  font-size: 14px;
+  color: #c5c5c5;
+}
+
+.searchModule_wrap .top .icon-cuowu {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  font-size: 14px;
+  color: #aaa;
+}
+.searchModule_wrap .top .search-panel-fields {
+  width: 82%;
+  position: relative;
+  float: left;
+  top: 6px;
+  border-radius: 2px;
+  border: 1px solid #e7e6ec;
+  background-color: #ffffff;
+  padding: 0 15px 0 30px;
+}
+.searchModule_wrap .top .search-panel-fields input[type=text] {
+  border: 0;
+  outline: none;
+  display: block;
+  height: 24px;
+  width: 100%;
+}
+.searchModule_wrap .top .sousuoBtn {
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+  line-height: 26px;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  top: 6px;
+  float: right;
+  border-radius: 3px;
+  border: 1px solid #e7e6ec;
+  color: #666666;
+  background-color: #ffffff;
+}
+.searchModule_wrap .mid {
+  overflow: hidden;
+  height: 78%;
+  position: relative;
+}
+.searchModule_wrap .mid .search-history {
+  padding: 0 14px;
+}
+.searchModule_wrap .mid .search-history dt {
+  height: 39px;
+  line-height: 39px;
+  color: #e5383c;
+}
+.searchModule_wrap .mid .search-history dd {
+  height: 33px;
+  line-height: 33px;
+}
+.searchModule_wrap .mid .e_con {
+  margin-top: 22px;
+}
+.searchModule_wrap .mid .e_cartoon {
+  height: 130px;
+  background: url('../images/error_cartoon.png') no-repeat center;
+  background-size: 133px 130px;
+}
+.searchModule_wrap .mid .e_msg {
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+}
+.searchModule_wrap .bot {
+  width: 100%;
+  background-color: #f0eff5;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.searchModule_wrap .bot .bot-inner {
+  height: 32px;
+  line-height: 32px;
+}
+.searchModule_wrap .bot .bot-inner i {
+  margin-right: 12px;
+}
+.searchModule_wrap .bot .bot-inner span {
+  position: relative;
+  top: -1px;
+}
+.searchModule_wrap .bot .icon-lajitong {
+  color: #aeb7cd;
+}
+
+@media screen and (min-width: 360px) {
+
+  /*兼容iphone6*/
+  .commonTab .tabUl .tabLi {
+    height: 37px;
+    line-height: 37px;
+  }
+  .commonTab .tabUl .tabLi i {
+    top: 31px;
+  }
+  .searchModule_wrap .top .sousuoBtn {
+    width:52px;
+  }
+  .searchModule_wrap .mid{
+    height: 82%;
+  }
+  
+}
+@media screen and (min-width: 400px) {
+
+  /*兼容iphone6 Plus*/
+  .commonTab .tabUl .tabLi {
+    height: 40px;
+    line-height: 40px;
+  }
+  .commonTab .tabUl .tabLi i {
+    top: 34px;
+  }
+  .searchModule_wrap .top .sousuoBtn {
+    width:55px;
+  }
+  .searchModule_wrap .mid{
+    height: 84%;
+  }
+}
+@media screen and (min-width:429px) and (max-width:1680px) {
+  .commonTab .tabUl .tabLi {
+    height: 40px;
+    line-height: 40px;
+  }
+  .commonTab .tabUl .tabLi i {
+    top: 34px;
+  }
+  .searchModule_wrap .top .sousuoBtn {
+    width:100px;
+  }
+  .searchModule_wrap .mid{
+    height: 84%;
+  }
+}

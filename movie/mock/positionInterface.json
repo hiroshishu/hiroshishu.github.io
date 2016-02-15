@@ -1,0 +1,81 @@
+{
+    "code": 200,
+    "data": [{
+        "letter": "A",
+        "items": [{
+            "cityId": "0101",
+            "cityName": "安庆",
+            "cityPy": "AQ"
+        }, {
+            "cityId": "0101",
+            "cityName": "安顺",
+            "cityPy": "AS"
+        }, {
+            "cityId": "0101",
+            "cityName": "鞍山",
+            "cityPy": "AS"
+        }]
+    }, {
+        "letter": "B",
+        "items": [{
+            "cityId": "0101",
+            "cityName": "北京",
+            "cityPy": "BJ"
+        }, {
+            "cityId": "0101",
+            "cityName": "北海",
+            "cityPy": "BH"
+        }, {
+            "cityId": "0101",
+            "cityName": "保定",
+            "cityPy": "BD"
+        }]
+    }, {
+        "letter": "C",
+        "items": [{
+            "cityId": "0101",
+            "cityName": "重庆",
+            "cityPy": "BJ"
+        }, {
+            "cityId": "0101",
+            "cityName": "长沙",
+            "cityPy": "BH"
+        }, {
+            "cityId": "0101",
+            "cityName": "成都",
+            "cityPy": "BD"
+        }]
+    }, {
+        "letter": "D",
+        "items": [{
+            "cityId": "0101",
+            "cityName": "大理",
+            "cityPy": "BJ"
+        }, {
+            "cityId": "0101",
+            "cityName": "大连",
+            "cityPy": "BH"
+        }]
+    },
+    {
+        "items": [ ],
+        "letter": "i"
+    },
+    
+     {
+        "letter": "F",
+        "items": [{
+            "cityId": "0101",
+            "cityName": "福州",
+            "cityPy": "BJ"
+        }, {
+            "cityId": "0101",
+            "cityName": "佛山",
+            "cityPy": "BJ"
+        }, {
+            "cityId": "0101",
+            "cityName": "凤凰",
+            "cityPy": "BH"
+        }]
+    }]
+}

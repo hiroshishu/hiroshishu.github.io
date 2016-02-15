@@ -1,0 +1,26 @@
+{
+	"code": "200",
+	"data": {
+		"agentName": "兜有中影票务通",
+		"beanMoney": "0.00",
+		"cinemaAddress": "北京市朝阳区朝北大悦城8层（朝阳北路与青年路交汇路口）",
+		"cinemaName": "金逸北京朝阳大悦城店",
+		"detailId": "174675",
+		"jdErpId": "8810578420",
+		"jqDiscountMoney": "0.00",
+		"mobile": "157****0522",
+		"movieOrderId": "342227",
+		"myOrderStatus": "1",
+		"onlineMoney": "43.00",
+		"payType": "2",
+		"templateName": "2D",
+		"totalAmount": "43.00",
+		"totalNum": "1",
+		"watchTime": "2015-06-16 00:00:00.0 CST",
+		"myOrderStatusTxt": "待付款",
+		"movieName": "南方公园1",
+		"mobile": "13366611430",
+		"payTimeMinute": "0",
+		"payTimeSecond": "5"
+	}
+}

@@ -1,0 +1,533 @@
+.movie-info {
+	height: 176px;
+	position: relative;
+	overflow: hidden;
+}
+
+.movie-info-bg {
+	height: 100%;
+}
+
+.movie-info-bg img {
+	position: relative;
+	left: 0;
+	right: 0;
+	top: -75%;
+	margin: auto;
+	width: 100%;
+	filter: url(../filter.svg#blur);
+	-webkit-filter: blur(3px);
+       -moz-filter: blur(3px);
+        -ms-filter: blur(3px);    
+            filter: blur(3px);
+}
+
+.movie-info-bg:after, .movie-info-wrap {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.movie-info-bg:after {
+	background: rgba(0, 0, 0, .5);
+}
+
+.movie-info-wrap {
+	padding: 11px 15px;
+}
+
+.movie-info-thumb {
+	width: 103px;
+	height: 150px;
+	float: left;
+	margin-right: 16px;
+}
+
+.movie-info-thumb img {
+  width: 100%;
+  height: 100%;
+  background: #e6eef6 url(../images/home-img-loading.png) no-repeat center center;
+}
+
+.movie-info-detail {
+	color: #ccc;
+}
+
+.movie-info-detail p {
+	margin-bottom: 6px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+}
+
+.movie-info-detail span.icon {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.movie-info-rate {
+	padding: 0 4px;
+	height: 20px;
+	line-height: 20px;
+	background: #cbcccd;
+	color: #3f444e;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	border-radius: 3px;
+}
+
+.movie-desc {
+	padding: 15px;
+	line-height: 18px;
+	color: #333;
+}
+
+.movie-desc-ellipsis, 
+.movie-desc-content {
+	display: none;
+}
+
+.movie-desc-ellipsis.show,
+.movie-desc-content.show {
+	display: block;
+}
+
+.movie-desc-dropdown {
+	margin-top: 9px;
+}
+
+.movie-desc-dropdown b.up {
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg); 
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/* 电影院推荐 */
+
+.grad {
+	background-color: #efefef;
+    background-image: -moz-linear-gradient(top,#efefef,#f6f6f6);
+    background-image: -ms-linear-gradient(top,#efefef,#f6f6f6);
+    background-image: -o-linear-gradient(top,#efefef,#f6f6f6);
+    background-image: -webkit-linear-gradient(top,#efefef,#f6f6f6);
+    background-image: linear-gradient(to bottom,#efefef,#f6f6f6);
+}
+
+.tag, .icon {
+	display: block;
+	padding: 0 3px;
+	height: 16px;
+	line-height: 16px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+}
+
+.freq-tag {
+	background: #f29f00;
+}
+
+.nearby-tag {
+	background: #6dbe25;
+}
+
+.imax-tag {
+	background: #6679b3;
+}
+
+.coupon-icon {
+	background: #6dbe25;
+}
+
+.seat-icon {
+	background: #f29f00;
+}
+
+.icon-3d {
+	color: #f66;
+	background: #dfdedd;
+}
+
+.icon-2d {
+	color: #369;
+	background: #d2d3d4;
+}
+
+.icon-rate {
+  background: #cbcccd;
+  color: #3f444e;
+  padding: 0 4px;
+}
+
+.cinema-freq-list .info, .cinema-list li, .cinema-region dd {
+	padding: 8px 15px;
+	border-top: 1px solid #dadada;
+	position: relative;
+}
+
+.cinema-freq-list .info>a, .cinema-list li>a,
+.cinema-region dd>a, .ticket-recomm>a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.cinema-list-name {
+	margin-bottom: 12px;
+}
+
+.cinema-list-name span.name {
+	font-size: 14px;
+	color: #333;
+	font-weight: bold;
+	margin: 0 3px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cinema-list-name span.icon {
+	margin-left: 3px; 
+}
+
+.cinema-list-addr {
+	color: #666;
+	line-height: 18px;
+}
+
+.cinema-list-addr span.addr {
+	margin-right: 26px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cinema-list-addr span.price {
+	color: #f96666;
+	font-size: 14px;
+}
+
+.cinema-freq-list .ticket {
+	padding: 12px 15px;
+	background: #fff;
+	border-top: 0;
+	display: flex;
+ 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+ 	display: -ms-flexbox;      /* TWEENER - IE 10 */
+ 	display: -webkit-flex;     /* NEW - Chrome */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+}
+
+/* 电影票推荐 */
+.ticket-recomm {
+	padding: 5px;
+	background: #cddded;
+	flex: 1;
+ 	-moz-box-flex: 1;         /* OLD - Firefox 19- */
+ 	-webkit-flex: 1;          /* Chrome */
+ 	-ms-flex: 1;              /* IE 10 */
+	-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+	margin: 0 16px 0 10px;
+	position: relative;
+	color: #666;
+}
+
+.ticket-recomm:last-child {
+	margin: 0 10px;
+}
+
+.ticket-recomm:before, .ticket-recomm:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 10px;
+	height: 100%;
+	background: url(../images/ticket-border.png) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.ticket-recomm:before {
+	left: -10px;
+}
+
+.ticket-recomm:after {
+	left: 100%;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.ticket-recomm-info {
+	height: 56px;
+	background: #e6eef6;
+	border-radius: 2px;
+	padding: 0 4px;
+	position: relative;
+}
+
+.ticket-recomm-info:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: -15px;
+	width: 48px;
+	height: 47px;
+	background: url(../images/hot_movie-flag.png) no-repeat;
+	z-index: 1;
+}
+
+.ticket-recomm-info:after {
+	position: absolute;
+	top: 4px;
+	-webkit-transform: rotate(43deg);
+	-ms-transform: rotate(43deg);
+	-o-transform: rotate(43deg);
+	transform: rotate(43deg);
+	z-index: 1;
+	font-weight: bold;
+}
+
+.ticket-recomm-info.lowest:after {
+	content: '最优惠';
+	right: -13px;
+}
+
+.ticket-recomm-info.earliest:after {
+	content: '最早';
+	right: -9px;
+}
+
+.ticket-recomm-info .time {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.ticket-recomm-info .langprice span {
+	display: block;
+	line-height: 24px;
+}
+
+.ticket-recomm-info .price {
+	font-size: 14px;
+	color: #f96666;
+}
+
+.ticket-recomm-info .price b {
+	font-size: 18px;
+}
+
+
+.ticket-recomm.none {
+  visibility: hidden;
+}
+
+
+/* 电影票推荐 */
+.cinema-region {
+	padding-bottom: 40px;
+}
+
+.cinema-region .region {
+	padding: 0 15px;
+	border-top: 1px solid #dadada;
+	color: #666;
+}
+
+.cinema-region .region p {
+	line-height: 38px;
+}
+
+.cinema-region-name {
+	font-size: 14px;
+}
+
+.cinema-region .cinema-list-name span.name {
+	margin: 0;
+}
+
+.cinema-region-num {
+	padding-right: 30px;
+	position:relative;
+}
+
+.cinema-region-num b {
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+
+.cinema-region-num b.up {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.cinema-region dl{
+	position: relative;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .2s ease-out;
+	-webkit-transition: max-height .2s ease-out;
+	-moz-transition: max-height .2s ease-out;  
+	-ms-transition: max-height .2s ease-out; 	
+}
+
+.cinema-region dl.expand{
+	max-height: 10000px;
+}
+
+#top {
+	position: fixed;
+	right: 15px;
+	bottom: 70px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #c7c7c7;
+	background: rgba(0, 0, 0, .5) url(../images/hot_movie-top.png) no-repeat center;
+	border-radius: 30px;
+	z-index: 100;
+	display: none;
+}
+
+.icon-hot_movie-arrow {
+	background: url(../images/hot_movie-arrow.png) no-repeat center;
+}
+
+.icon-hot_movie-arrow2 {
+	background: url(../images/hot_movie-arrow2.png) no-repeat center;
+}
+
+.icon-hot_movie-arrow, 
+.icon-hot_movie-arrow2 {
+	display: block;
+	width: 14px;
+	height: 8px;
+	background-size: contain;
+}
+
+#error{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,0);z-index: 100;}
+#error p{position:fixed;top:50%;left:50%;margin-left:-85px;margin-top:-25px;width:170px;height:50px;line-height:50px;background-color:rgba(0,0,0,.6);color:#fff;text-align:center;font-size:15px;border-radius:3px;}
+.rows{-webkit-transition:all .8s linear ;-moz-transition:all .8s linear;-o-transition:all .8s linear;transition:all .8s linear;-webkit-animation: row 3s ease-in-out infinite;animation: row 3s ease-in-out infinite;}
+.fade{opacity:0;}
+@-moz-keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+@-webkit-keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+@keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+
+@media screen and (min-width: 320px){
+	.cinema-list-name span.name {
+		width: 200px;
+	}
+
+	.cinema-list-addr span.addr {
+		width: 150px;
+	}
+}
+
+@media screen and (min-width: 360px){
+	.cinema-list-name span.name {
+		width: 240px;
+	}
+
+	.cinema-list-addr span.addr {
+		width: 190px;
+	}
+}
+
+@media screen and (min-width: 400px){
+	.cinema-list-name span.name {
+		width: 280px;
+	}
+
+	.cinema-list-addr span.addr {
+		width: 230px;
+	}
+}
+
+@media screen and (min-width: 480px){
+	.cinema-list-name span.name {
+		width: 360px;
+	}
+
+	.cinema-list-addr span.addr {
+		width: 410px;
+	}
+}
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 兼容iphone6 */
+  .banner {
+    height: 110px;
+  }
+  .banner img {
+    height: 110px;
+  }
+  .movies .col2 {
+    height: 238px;
+  }
+  .movies .col2 .col {
+    height: 238px;
+  }
+  .movies .col2 .col img, .movies .col2 .col .img-loading {
+    height: 238px;
+  }
+  .movies .col3 .col img, .movies .col3 .col .img-loading {
+    height: 144px;
+  }
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 兼容iphone6 Plus */
+  .banner {
+    height: 110px;
+  }
+  .banner img {
+    height: 110px;
+  }
+  .movies .col2 {
+    height: 268px;
+  }
+  .movies .col2 .col {
+    height: 268px;
+  }
+  .movies .col2 .col img, .movies .col2 .col .img-loading {
+    height: 268px;
+  }
+  .movies .col3 .col img, .movies .col3 .col .img-loading {
+    height: 160px;
+  }
+}
+@media screen and (min-width:429px) and (max-width:1680px) {
+  .banner {
+    height: 130px;
+  }
+  .banner img {
+    height: 130px;
+  }
+  .movies .col2 {
+    height: 426px;
+  }
+  .movies .col2 .col {
+    height: 426px;
+  }
+  .movies .col2 .col img, .movies .col2 .col .img-loading {
+    height: 426px;
+  }
+  .movies .col3 .col img, .movies .col3 .col .img-loading {
+    height: 260px;
+  }
+}

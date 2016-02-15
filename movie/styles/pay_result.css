@@ -1,0 +1,53 @@
+/*layoyt*/
+.pay_result {
+  color: #333;
+  background-color: #f3f5f7;
+}
+.pay_result .pay-amount {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  background-color: #fff;
+}
+.pay_result .pay-amount label, .pay_result .menus h2, .pay_result .tip p {
+  color: #8c8c8c;
+}
+.pay_result .tip {
+  padding: 20px;
+}
+.pay_result .tip h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.pay_result .menus {
+  padding: 20px;
+  background-color: #fff;
+}
+.pay_result .menus h2 {
+  font-size: 14px;
+}
+.pay_result .menus .pra, .pay_result .menus .prb {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 5px;
+  background-size: 30px 30px;
+}
+.pay_result .menus .pra {
+  background-image: url(../images/pay_result_a.png);
+}
+.pay_result .menus .prb {
+  background-image: url(../images/pay_result_b.png);
+}
+.pay_result .menus .row {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  margin-top: 10px;
+}
+.menus .row i,.menus .row a {
+  vertical-align: middle;
+  text-decoration: none;
+}

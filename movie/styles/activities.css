@@ -1,0 +1,74 @@
+body {
+  background-color: #f3f5f7;
+  margin: 0 auto;
+}
+.activities {
+  margin-bottom: 55px;
+}
+.activities .item {
+  height: 140px;
+  position: relative;
+  margin: 10px 10px 0;
+}
+.activities .item img {
+  width: 100%;
+  height: 140px;
+}
+.activities .item .mask {
+  top: 5px;
+  left: 5px;
+  padding: 3px 6px;
+  position: absolute;
+  z-index: 2;
+}
+.activities .item .c1 {
+  color: #fff;
+  background-color: rgba(194,69,69,0.8);
+}
+.activities .item .c2 {
+  background-color: rgba(255,255,255,0.8);
+}
+.activities .item .c3 {
+  background-color: rgba(255,255,255,0.8);
+}
+.activities .item .desc {
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 5px;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+}
+.activities .item .i-overlay {
+  position: absolute;
+  height: 114px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+/*helper*/
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 兼容iphone6 */
+  
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 兼容iphone6 Plus */
+  
+}
+@media screen and (min-width:429px) and (max-width:1680px) {
+  
+}

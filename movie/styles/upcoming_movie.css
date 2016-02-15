@@ -1,0 +1,124 @@
+.movie-info {
+	height: 176px;
+	position: relative;
+	overflow: hidden;
+}
+
+.movie-info-bg {
+	height: 100%;
+}
+
+.movie-info-bg img {
+	position: relative;
+	top: -75%;
+	width: 100%;
+	-webkit-filter: blur(3px); /* Chrome, Opera */
+       -moz-filter: blur(3px);
+        -ms-filter: blur(3px);    
+            filter: blur(3px);
+}
+
+.movie-info-bg:after, .movie-info-wrap {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.movie-info-bg:after {
+	background: rgba(0, 0, 0, .5);
+}
+
+  
+.movie-info-wrap {
+	padding: 11px 15px;
+}
+
+.movie-info-thumb {
+	width: 103px;
+	height: 150px;
+	float: left;
+	margin-right: 16px;
+}
+
+.movie-info-thumb img {
+	width: 100%;
+	height: 100%;
+	background: #e6eef6 url(../images/home-img-loading.png) no-repeat center center;
+}
+
+.movie-info-detail {
+	color: #ccc;
+}
+
+.movie-info-detail p {
+	margin-bottom: 6px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	line-height: 14px;
+}
+
+.movie-info-detail span.icon {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.movie-desc {
+	padding: 15px;
+	line-height: 18px;
+	color: #333;
+}
+
+.tag, .icon {
+	display: block;
+	padding: 0 3px;
+	height: 16px;
+	line-height: 16px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+}
+
+.freq-tag {
+	background: #f29f00;
+}
+
+.nearby-tag {
+	background: #6dbe25;
+}
+
+.imax-tag {
+	background: #6679b3;
+}
+
+.coupon-icon {
+	background: #6dbe25;
+}
+
+.seat-icon {
+	background: #f29f00;
+}
+
+.icon-3d {
+	color: #f66;
+	background: #dfdedd;
+}
+
+.icon-2d {
+	color: #369;
+	background: #d2d3d4;
+}
+
+#error{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,0);z-index: 100;}
+#error p{position:fixed;top:50%;left:50%;margin-left:-85px;margin-top:-25px;width:170px;height:50px;line-height:50px;background-color:rgba(0,0,0,.6);color:#fff;text-align:center;font-size:15px;border-radius:3px;}
+.rows{-webkit-transition:all .8s linear ;-moz-transition:all .8s linear;-o-transition:all .8s linear;transition:all .8s linear;-webkit-animation: row 3s ease-in-out infinite;animation: row 3s ease-in-out infinite;}
+.fade{opacity:0;}
+@-moz-keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+@-webkit-keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}
+@keyframes row {
+25%{top:105px;} 50%{top:100px;} 75%{top:105px;} 100%{top:100px;}}

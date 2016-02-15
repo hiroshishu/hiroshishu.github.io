@@ -1,0 +1,362 @@
+body {
+  background-color: #f3f5f7;
+  margin: 0 auto;
+}
+
+/*layoyt*/
+.banner {
+  height: 90px;
+  display: none;
+}
+.banner img {
+  width: 100%;
+  height: 90px;
+}
+.nav-bar {
+  height: 45px;
+  color: #ffffff;
+  background-color: #ff6666;
+  position: relative;
+  line-height: 1;
+}
+.nav-bar .loc {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-bar .loc span {
+  vertical-align: middle;
+}
+.nav-bar .tabs {
+  top: 9px;
+  position: relative;
+  width: 160px;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+.nav-bar .tabs .current {
+  color: #ff6666;
+  background-color: #fff;
+}
+.nav-bar .tabs span {
+  width: 50%;
+  padding: 6.6px;
+  display: inline-block;
+  text-align: center;
+}
+.nav-bar .change-view-btn {
+  position: absolute;
+  top: 5px;
+  padding: 10px;
+  right: 5px;
+}
+.movies {
+  display: none;
+  overflow: hidden;
+}
+.movies.show {
+  display: block;
+}
+
+/*视图1*/
+#hot-view-col1, #upcoming-view-col1 {
+  margin-bottom: 35px;
+}
+.movies .row {
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.movies .row .f-score {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #e6393d;
+}
+.movies .row .f-score em {
+  font-size: 14px;
+}
+.movies .row:last-child {
+  border-bottom: none;
+}
+.movies .row img {
+  width: 55px;
+  height: 78px;
+  float: left;
+  margin-right: 10px;
+}
+.movies .row .img-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 78px;
+  width: 55px;
+  z-index: 1;
+  background: url(../images/home-img-loading.png) no-repeat #e6eef6 center center;
+  background-size: 26.5px 23px;
+}
+.movies .row h4 {
+  color: #666;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+.movies .row h4 span:first-child {
+  margin-left: 10px;
+}
+.movies .row .m-type,.movies .row .m-ap {
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 3px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.movies .row .m-type{
+  background-color: #6699cc;
+}
+.movies .row .m-ap {
+  background-color: #ff6666;
+}
+.movies .row .btn {
+  right: 0;
+  bottom: 10px;
+  position: absolute;
+  color: #e6393d;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+}
+.movies .row p {
+  color: #999;
+  margin-top: 2px;
+}
+.movies .row p.info {
+  margin-top: 15px;
+}
+
+/*视图2、3*/
+#hot-view-col2, #hot-view-col3, #upcoming-view-col2, #upcoming-view-col3 {
+  margin-bottom: 55px;
+}
+.movies .col2 {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  margin: 10px 10px 0;
+  height: 202px;
+}
+.movies .col3 {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  margin: 10px 10px 0;
+}
+#hot-view-col3 .col3 > div, #upcoming-view-col3 .col3 > div {
+  width: 100%;
+  display: inline-block;
+}
+.movies .col2 .col {
+  height: 202px;
+}
+.movies .col2 .col .col-overlay {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), #000); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.0), #000); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.0), #000); /* Firefox 3.6 - 15 */
+  background: linear-gradient(rgba(0, 0, 0, 0.0), #000); /* 标准的语法 */
+}
+.movies .col2 .col, .movies .col3 .col {
+  position: relative;
+}
+.movies .col2 .col .img-loading, .movies .col3 .col .img-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border-radius: 5px;
+  background: url(../images/home-img-loading.png) no-repeat #e6eef6 center center;
+}
+.movies .col2 .col img, .movies .col2 .col .img-loading {
+  height: 202px;
+}
+.movies .col3 .col img, .movies .col3 .col .img-loading {
+  height: 120px;
+}
+.movies .col .seat-charts-btn {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: rgba(255, 102, 102, 1);
+}
+.movies .col img {
+  width: 100%;
+  border-radius: 5px;
+}
+.movies .col .seat-charts-btn-wrap, .movies .col .movie-name-wrap, .movies .col .mask {
+  position: absolute;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+}
+.movies .col .seat-charts-btn-wrap {
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  padding: 0 5px;
+}
+.movies .col .movie-name-wrap {
+  bottom: 31px;
+  left: 0;
+  width: 100%;
+}
+.movies .col .movie-name-wrap span {
+  margin: 0 0.6rem;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  z-index: 1;
+}
+.movies .col .mask {
+  right: 0;
+  top: 0;
+  margin: 5px 5px 0 0;
+}
+.movies .col .mask .inner {
+  overflow: hidden;
+  border-radius: 5px;
+}
+.movies .col .mask .m-type {
+  padding: 3px;
+  display: inline-block;
+  background-color: #84add6;
+}
+.movies .col .mask .m-ap {
+  padding: 3px;
+  display: inline-block;
+  background-color: #ff6666;
+}
+.movies .col .mask .m-score {
+  padding: 3px;
+  display: inline-block;
+  background-color: #ebeef2;
+  color: #3f444e;
+}
+
+.change-view-btn .iconfont {
+  color: #fff;
+}
+
+.dropdown {
+  right: 0;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 9;
+  top: 45px;
+  background: #f3f5f7;
+  width: 88px;
+  text-align: center;
+  color: #666;
+  border-left: 1px solid #c1c2c4;
+  border-right: 1px solid #c1c2c4;
+  border-bottom: 1px solid #c1c2c4;
+}
+.dropdown .current {
+  color: #ff6666;
+}
+.dropdown .iconfont {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.dropdown li {
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+}
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.movies div.emptyM {
+  text-align: center;
+  margin-top: 50%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.none {
+  display: none;
+}
+
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 兼容iphone6 */
+  .movies .col2 {
+    height: 238px;
+  }
+  .movies .col2 .col {
+    height: 238px;
+  }
+  .movies .col2 .col img, .movies .col2 .col .img-loading {
+    height: 238px;
+  }
+  .movies .col3 .col img, .movies .col3 .col .img-loading {
+    height: 144px;
+  }
+  .movies .col .movie-name-wrap span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 兼容iphone6 Plus */
+  .movies .col2 {
+    height: 268px;
+  }
+  .movies .col2 .col {
+    height: 268px;
+  }
+  .movies .col2 .col img, .movies .col2 .col .img-loading {
+    height: 268px;
+  }
+  .movies .col3 .col img, .movies .col3 .col .img-loading {
+    height: 160px;
+  }
+  .movies .col .movie-name-wrap span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width:429px) and (max-width:1680px) {
+  .banner {
+    height: 110px;
+  }
+  .banner img {
+    height: 110px;
+  }
+  .movies .col2 {
+    height: 426px;
+  }
+  .movies .col2 .col {
+    height: 426px;
+  }
+  .movies .col2 .col img, .movies .col2 .col .img-loading {
+    height: 426px;
+  }
+  .movies .col3 .col img, .movies .col3 .col .img-loading {
+    height: 260px;
+  }
+}
