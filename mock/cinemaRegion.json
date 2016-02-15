@@ -1,4 +1,0 @@
-{
-  "code": 200,
-  "data":[{"regionCode":"300005","regionName":"朝阳区"},{"regionCode":"300008","regionName":"海淀区"},{"regionCode":"300001","regionName":"东城区"},{"regionCode":"300013","regionName":"昌平区"},{"regionCode":"300014","regionName":"大兴区"},{"regionCode":"300015","regionName":"怀柔区"},{"regionCode":"300016","regionName":"平谷区"},{"regionCode":"300017","regionName":"密云县"},{"regionCode":"300018","regionName":"延庆县"},{"regionCode":"300012","regionName":"顺义区"},{"regionCode":"300011","regionName":"通州区"},{"regionCode":"300010","regionName":"房山区"},{"regionCode":"300009","regionName":"门头沟区"},{"regionCode":"300007","regionName":"石景山区"},{"regionCode":"300006","regionName":"丰台区"},{"regionCode":"300004","regionName":"宣武区"},{"regionCode":"300003","regionName":"崇文区"},{"regionCode":"300002","regionName":"西城区"},{"regionCode":"310058","regionName":"近郊区"}]
-}

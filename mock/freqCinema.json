@@ -1,4 +1,0 @@
-{
-  "code": 200,
-  "data":[{"address":"西安市雁塔区长安中路30号军人服务社购物中心8楼","cinemaDistance":"0","cinemaId":"17977","cinemaName":"西安欢乐小马电影城","planPrice":"19","regionName":"雁塔区","temPrice":"0"},{"address":"昌平区南环路金隅万科广场8F(创新路口)","cinemaDistance":"0","cinemaId":"5757","cinemaName":"首都电影院（昌平店）","planPrice":"19","regionName":"昌平区","temPrice":"33"},{"address":"北京市昌平区北清路1号永旺国际商城3楼","cinemaDistance":"0","cinemaId":"4146","cinemaName":"中影国际影城永旺店","planPrice":"35","regionName":"昌平区","temPrice":"33"},{"address":"北京市朝阳区双桥路3号东星时尚广场5层（八通线城铁双桥站南50米）","cinemaDistance":"0","cinemaId":"6816","cinemaName":"北京金逸影城-双桥店","planPrice":"17","regionName":"朝阳区","temPrice":"43"},{"address":"北京市丰台区靛厂路千禧购物街4号楼F1-F3","cinemaDistance":"0","cinemaId":"5717","cinemaName":"中影国际影城北京千禧街店","planPrice":"19","regionName":"丰台区","temPrice":"33"}]
-}
