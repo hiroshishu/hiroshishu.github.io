@@ -329,6 +329,7 @@ scope.pickSeat=function($event){
     var tar = $event.target,
     target = angular.element( tar );
     target.toggleClass('occupied');
+    console.log(11);
 }
 
         scope.$watch('rows', function(newVal){
