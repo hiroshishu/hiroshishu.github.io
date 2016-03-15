@@ -1,0 +1,260 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.4.1
+    site: https://github.com/ksky521/nodePPT
+    date: 
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>使用Javascript框架开发移动应用 - By 朱皓</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.moon.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>使用Javascript框架开发移动应用</h1>
+
+</hgroup><article>
+
+<h2>前端开发工程师 朱皓</h2>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>为什么是Javascript框架</h2>
+
+</hgroup><article>
+
+<ul>
+<li>使web开发者有了移动应用开发的能力，极大降低了学习成本</li>
+<li>允许移动开发者使用一套代码来完成多平台的开发部署</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>常用Javascript框架介绍</h2>
+<h4>＃按照实现方式主要分为两种＃</h4>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用UIWebView(IOS) / WebView(Android)</h2>
+
+</hgroup><article>
+
+<h2><img src="./img/cordova-logo-white.png" height="300"></h2>
+<p>以<a href="http://cordova.apache.org/" target="_blank">Cordova</a>为代表</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>Cordova</h2>
+
+</hgroup><article>
+
+<ul>
+<li>Cordova是贡献给Apache后的开源项目，是从PhoneGap中抽出的核心代码，是驱动PhoneGap的核心引擎</li>
+<li>Cordova支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone, Palm WebOS, Bada 和 Symbian</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1><img src="./img/cordovaapparchitecture.png" height="400"></h1>
+<h4>简言之，将Web App包裹在一层WebView中，通过Cordova封装的API来调用手机功能</h4>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h4>Javascript调用相机API</h4>
+
+</hgroup><article>
+
+<pre><code class="javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.camera);
+}
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>基于Cordova的其它框架</h2>
+
+</hgroup><article>
+
+<ul>
+<li>Adobe PhoneGap: Cordova的前身，内核仍是Cordova，自身具有build工具</li>
+<li>Ionic: 深度整合Cordova，但需要结合Angular框架来进行开发，提供一套UI组件</li>
+<li>Sencha Touch, Cocoon...</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用Javascript引擎(JavaScriptCore/SpiderMonkey/V8/Rhino)</h2>
+
+</hgroup><article>
+
+<h2><img src="./img/rn.png"></h2>
+<p>以<a href="http://facebook.github.io/react-native/" target="_blank">React Native</a>为代表</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>React Native</h2>
+
+</hgroup><article>
+
+<ul>
+<li>Facebook推出的开源项目，基于react架构模式, 起初只发布了IOS版本，2015年9月，android版本上线</li>
+<li>React提出重新思考UI开发过程，不只是面向浏览器，而是所有的前端，包括了Web与Native</li>
+<li>Learn once, write everywhere</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1><img src="./img/rnarchit.jpg" height="400"></h1>
+<h4>Javascript与Object-C<a href="http://blog.cnbang.net/tech/2698/" target="_blank">通信机制</a></h4>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h4>React Native构建页面元素</h4>
+
+</hgroup><article>
+
+<p><div class="columns-2"></p>
+<pre><code class="javascript">
+// iOS
+
+var React = require('react-native');
+var { TabBarIOS, NavigatorIOS } = React;
+
+var App = React.createClass({
+  render: function() {
+    return (
+      &lt;TabBarIOS>
+        &lt;TabBarIOS.Item title='React Native' selected={true}>
+          &lt;NavigatorIOS initialRoute={{ title: 'React Native' }} />
+        &lt;/TabBarIOS.Item>
+      &lt;/TabBarIOS>
+    );
+  },
+});
+</code></pre>
+<pre><code class="javascript">
+// Android
+
+var React = require('react-native');
+var { DrawerLayoutAndroid, ProgressBarAndroid } = React;
+
+var App = React.createClass({
+  render: function() {
+    return (
+      &lt;DrawerLayoutAndroid
+        renderNavigationView={() => 
+            &lt;Text>React Native&lt;/Text>}>
+        &lt;ProgressBarAndroid />
+      &lt;/DrawerLayoutAndroid>
+    );
+  },
+});
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>基于Javascript引擎的其它框架</h2>
+
+</hgroup><article>
+
+<ul>
+<li>Native Script: 早于React Native发布，使用XML+ECMAScript5/JavaScript＋CSS3来构建原生应用，100%共享代码构建Android、iOS和Windows Phone应用</li>
+<li>Titanium Mobile, HTML5+...</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>Javascript框架如何选型</h2>
+
+</hgroup><article>
+
+<ul>
+<li>业务类型：Javascript框架终究不能完全代替原生</li>
+<li>框架生态：是否开源，贡献者数量，bug反馈速度</li>
+<li>学习曲线：要将团队的学习时间考虑在内</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>感谢！</h1>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.4.1</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'slide3',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+
+
+<!--placeholder-->
+</body>
+</html>
